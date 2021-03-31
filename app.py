@@ -9,7 +9,7 @@ def index():
     cocktail=requests.get("https://www.thecocktaildb.com/api/json/v1/1/random.php")
     data = json.loads(cocktail.content) 
     print(data)
-    return render_template("index.html", data=data["drinks"][0])
+    return render_template("index.html", data = data["drinks"][0])
    
 
 if __name__ == "__main__":
