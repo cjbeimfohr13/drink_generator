@@ -1,9 +1,18 @@
 {% extends "layout.html" %} {% block content %} 
+
+  <div class="hero-image">
+      <div class="text">
+        Cocktail Creator
+      </div>
+  </div>
+
+<br>
 <img class="cocktail" src={{data["strDrinkThumb"]}} alt="Cocktail">
 <h1>{{data["strDrink"]}}</h1>
 <h3>{{data["strInstructions"]}}</h3>
 
 <ul class="ingredients" style="list-style-type:none;">
+  <!-- {%for data in range(17,32)%} -->
   <li>{{data["strIngredient1"]}}</li>
   <li>{{data["strIngredient2"]}}</li>
   <li>{{data["strIngredient3"]}}</li>
@@ -12,9 +21,10 @@
   <li>{{data["strIngredient6"]}}</li>
   <li>{{data["strIngredient7"]}}</li>
   <li>{{data["strIngredient8"]}}</li>
+  <!-- {%endfor%} -->
 </ul>
   
-<ul class='measurements'>
+<ul class='measurements' style="list-style-type:none;">
   <li>{{data["strMeasure1"]}}</li>
   <li>{{data["strMeasure2"]}}</li>
   <li>{{data["strMeasure3"]}}</li>

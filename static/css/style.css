@@ -9,12 +9,44 @@ body{
     padding-top: 20px;
 }
 
-.h1{
-    text-align: center;
+h1{
+    padding-left: 40px;
+}
+h3{
+    padding-left: 40px;
 }
 .ingredients{
-    padding-left: 20px;
+    padding-left: 100px;
 }
 .measurements{
-    padding-left: 20px;
+    padding-left: 160px;
 }
+
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(65, 65, 65, 0.5), rgba(65, 65, 65, 0.5)), url("/static/images/PFChangs1.jpg");
+    height: 50%;
+    padding-top: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .text {
+    background-color: white;
+    color: black;
+    font-size: 10vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+  ul{
+      display: inline-block;
+  }
